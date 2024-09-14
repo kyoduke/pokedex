@@ -1,13 +1,13 @@
 let currentPokemonId = 1;
 
 async function fetchPokemonById(pokeid=null) {
-    let id;
+    idInput = document.querySelector('#pokemon-id')
     if (pokeid === null) {
-        id = document.getElementById('pokemon-id').value || currentPokemonId;
+        currentPokemonId = Number.parseInt(idInput.value || currentPokemonId);
     } else {
-        id = pokeid;
+        currentPokemonId = Number.parseInt(pokeid);
     }
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${currentPokemonId}`);
     const pokemon = await response.json();
     displayPokemon(pokemon);
 }

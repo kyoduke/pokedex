@@ -21,9 +21,33 @@ body {
 }
 
 .fire {
-    background-color: #f08030;
+    background-color:red;
 }
 
 .water {
     background-color: #6890f0;
+}
+
+.electric {
+    background-color: khaki;
+}
+
+.poison {
+    background-color: darkolivegreen;
+}
+
+.grass {
+    background-color: greenyellow;
+}
+
+.fairy {
+    background-color: hotpink;
+}
+
+.bug {
+    background-color: #789860;
+}
+
+.steel {
+    background-color: #69686e;
 }
